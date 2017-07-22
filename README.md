@@ -1,4 +1,4 @@
-# cirkit_unit03_apps [![Build Status](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_simple_apps.svg?branch)](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_simple_apps) [![Slack](https://img.shields.io/badge/Slack-CIR--KIT-blue.svg)](http://cir-kit.slack.com/messages/unit03_apps)
+# cirkit_unit03_simple_apps [![Build Status](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_simple_apps.svg?branch)](https://travis-ci.org/CIR-KIT-Unit03/cirkit_unit03_simple_apps) [![Slack](https://img.shields.io/badge/Slack-CIR--KIT-blue.svg)](http://cir-kit.slack.com/messages/unit03_apps)
 Simple application packages for CIR-KIT-Unit03
 
 For CIR-KIT-Unit03 instructions and tutorials, please see http://wiki.ros.org/Robots/CIR-KIT-Unit03.
@@ -48,7 +48,7 @@ $ git clone https://github.com/CIR-KIT-Unit03/cirkit_unit03_simple_apps.git
 $ cd <catkin_ws>
 $ wstool init src
 $ wstool merge -t src src/cirkit_unit03_pkgs/cirkit_unit03_pkgs.rosinstall
-$ wstool merge -t src src/cirkit_unit03_apps/cirkit_unit03_simple_apps.rosinstall
+$ wstool merge -t src src/cirkit_unit03_simple_apps/cirkit_unit03_simple_apps.rosinstall
 $ wstool update -t src
 ```
 ##### 5. Download depended packages by rosdep.
