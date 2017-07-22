@@ -1,0 +1,8 @@
+- git:
+    local-name: cirkit_unit03_pkgs
+    uri: https://github.com/CIR-KIT-Unit03/cirkit_unit03_pkgs.git
+    version: simple
+- git:
+    local-name: timed_roslaunch
+    uri: https://github.com/MoriKen254/timed_roslaunch.git
+    version: master
