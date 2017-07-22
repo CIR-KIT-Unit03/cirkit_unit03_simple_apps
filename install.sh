@@ -5,9 +5,9 @@ showHelp() {
     echo "usege: install.sh [-h] [-i] [-t] [-r]"
     echo 
     echo "Clone application pacakges and all pacakges specifically related do CIR-KIT-Unit03."
-    echo "Packages to be cloned are defined in cirkit_unit03_apps.rosinstall and cirkit_unit03_pkgs.rosinstall."
+    echo "Packages to be cloned are defined in cirkit_unit03_sinple_apps.rosinstall and cirkit_unit03_pkgs.rosinstall."
     echo 
-    echo "Application packages for CIR-KIT-Unit03 are cloned into cirkit_unit03_apps directory."
+    echo "Application packages for CIR-KIT-Unit03 are cloned into cirkit_unit03_simple_apps directory."
     echo "Basical packages for CIR-KIT-Unit03 are cloned into cirkit_unit03_pkgs directory."
     echo "Dependent packages for CIR-KIT-Unit03 are cloned into cirkit_unit03_deps directory."
     echo 
@@ -16,9 +16,9 @@ showHelp() {
     echo "  |"
     echo "  |- src"
     echo "     |"
-    echo "     |- cirkit_unit03_apps"
+    echo "     |- cirkit_unit03_simple_apps"
     echo "     |   |"
-    echo "     |   |- (application pkgs cloned via cirkit_unit03_apps.rosinstall)"
+    echo "     |   |- (application pkgs cloned via cirkit_unit03_simple_apps.rosinstall)"
     echo "     |"
     echo "     |"
     echo "     |- cirkit_unit03_deps (Just a directory, not a metapacage)"
@@ -61,7 +61,7 @@ if [ "$FLG_R" = "TRUE" ]; then
 fi
 wstool init src
 wstool merge -t src src/cirkit_unit03_pkgs/cirkit_unit03_pkgs.rosinstall
-wstool merge -t src src/cirkit_unit03_apps/cirkit_unit03_apps.rosinstall
+wstool merge -t src src/cirkit_unit03_simple_apps/cirkit_unit03_simple_apps.rosinstall
 wstool update -t src
 
 # Download depended packages by rosdep.
